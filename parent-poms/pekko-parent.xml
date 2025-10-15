@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>com.pprdsystems.ai</groupId>
+    <artifactId>parent-poms</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <relativePath>./pom.xml</relativePath>
+  </parent>
+
+  <artifactId>pekko-parent</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>pekko-parent</name>
+  <description>Parent POM for all Pekko submodules</description>
+  <packaging>pom</packaging>
+
+  <properties>
+    <pekko.version>1.2.1</pekko.version>
+    <pekko-bom.version>1.2.1</pekko-bom.version>
+    <pekko-http-bom.version>1.2.0</pekko-http-bom.version>
+    <pekko-http.version>1.2.0</pekko-http.version>
+    <pekko-stream.version>1.2.1</pekko-stream.version>
+    <pekko-stream-typed.version>1.2.1</pekko-stream-typed.version>
+    <pekko-management.version>1.1.0</pekko-management.version>
+    <pekko-persistence-mongodb.version>1.2.1</pekko-persistence-mongodb.version>
+    <pekko-persistence-inmemory.version>1.1.1</pekko-persistence-inmemory.version>
+    <pekko-connector-kafka.version>1.1.0</pekko-connector-kafka.version>
+    <pekko-connector-csv.version>1.1.0-M1</pekko-connector-csv.version>
+    <pekko-persistence-cassandra.version>1.1.0-M1</pekko-persistence-cassandra.version>
+    <pekko-grpc.version>1.1.0</pekko-grpc.version>
+  </properties>
+
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>org.apache.pekko</groupId>
+        <artifactId>pekko-bom_${scala.version}</artifactId>
+        <version>${pekko-bom.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+
+      <dependency>
+        <groupId>org.apache.pekko</groupId>
+        <artifactId>pekko-http-bom_${scala.version}</artifactId>
+        <version>${pekko-http-bom.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+
+      <dependency>
+        <groupId>org.apache.pekko</groupId>
+        <artifactId>pekko-stream-typed</artifactId>
+        <version>${pekko-stream-typed.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.apache.pekko</groupId>
+        <artifactId>pekko-connectors-kafka_${scala.version}</artifactId>
+        <version>${pekko-connector-kafka.version}</version>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+</project>

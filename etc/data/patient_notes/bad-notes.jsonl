@@ -1,0 +1,3 @@
+{"encounter_id": "encX", "note_text": "Missing tenant_id field, should go to DLQ.", "ts": "2025-09-25T14:00:00Z"}
+{"tenant_id": "tenantZ", "note_text": "Missing encounter_id field, should go to DLQ.", "ts": "2025-09-25T14:10:00Z"}
+{"tenant_id": "tenantZ", "encounter_id": "encY", "note_text": "", "ts": "2025-09-25T14:20:00Z"}

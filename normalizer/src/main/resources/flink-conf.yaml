@@ -1,0 +1,3 @@
+state.backend.type: filesystem
+state.checkpoints.dir: file:///etc
+execution.checkpointing.interval: 1000

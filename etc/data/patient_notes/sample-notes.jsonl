@@ -1,0 +1,6 @@
+{"tenant_id": "tenantA", "encounter_id": "enc1", "patient_id_hash": "p123", "clinician_id_hash": "c456", "note_text": "Patient complains of headache and mild fever for 2 days.", "ts": "2025-09-25T10:15:30Z"}
+{"tenant_id": "tenantA", "encounter_id": "enc2", "patient_id_hash": "p789", "clinician_id_hash": "c222", "note_text": "Reports chest pain during exertion, history of hypertension.", "ts": "2025-09-25T11:05:00Z"}
+{"tenant_id": "tenantB", "encounter_id": "enc3", "patient_id_hash": "p111", "clinician_id_hash": "c333", "note_text": "Complains of shortness of breath. Oxygen saturation 91%.", "ts": "2025-09-25T12:30:45Z"}
+{"tenant_id": "tenantB", "encounter_id": "enc4", "patient_id_hash": "p444", "clinician_id_hash": "c555", "note_text": "Follow-up visit. Diabetes under control with current medication.", "ts": "2025-09-25T13:10:15Z"}
+{"tenant_id":"t-1","patient_id_hash":"p-abc","encounter_id":"e-001","note_text":"Patient reports chest pain for 2 hours, history of hypertension.","clinician_id_hash":"c-100","ts":"2025-09-26T14:03:00Z"}
+{"tenant_id":"t-1","patient_id_hash":"p-def","encounter_id":"e-002","note_text":"Persistent cough, no fever, non-smoker.","clinician_id_hash":"c-101","ts":"2025-09-26T14:07:00Z"}
