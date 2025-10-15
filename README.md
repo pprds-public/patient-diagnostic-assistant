@@ -13,7 +13,7 @@ Each module simulates a cognitive layer:
 ## Notes
 > **Status:** Work in Progress - incremental updates. Some Updates might be published as LinkedIn articles.  
 > **Vision:** A fully interpretable, event-driven and self-auditing AI workflow for healthcare diagnostics.  
-> **Follow the journey:** [LinkedIn @PPRD Systems LLC](www.linkedin.com/in/melbahja) 
+> **Follow the journey:** [LinkedIn @PPRD Systems LLC](https://www.linkedin.com/in/melbahja)
 
 ## 1. Purpose / Objective
 ### What problem are we solving?
