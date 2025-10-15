@@ -19,6 +19,8 @@
 
   <modules>
     <module>../normalizer</module>
+    <module>../diagnoser</module>
+    <module>../planner</module>
   </modules>
 
   <dependencyManagement>

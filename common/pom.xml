@@ -6,20 +6,21 @@
 
   <parent>
     <groupId>com.pprdsystems.ai</groupId>
-    <artifactId>patient-diagnostic-assistant</artifactId>
+    <artifactId>parent-poms</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <relativePath>../pom.xml</relativePath>
+    <relativePath>../parent-poms/pom.xml</relativePath>
   </parent>
 
-  <artifactId>parent-poms</artifactId>
+  <artifactId>common</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <name>parent-poms</name>
-  <packaging>pom</packaging>
+  <name>common</name>
+  <packaging>jar</packaging>
 
-  <modules>
-    <module>pekko-parent.xml</module>
-    <module>flink-parent.xml</module>
-    <module>spring-boot-parent.xml</module>
-    <module>../common</module>
-  </modules>
+  <dependencies>
+    <dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-lang3</artifactId>
+    </dependency>
+  </dependencies>
+
 </project>

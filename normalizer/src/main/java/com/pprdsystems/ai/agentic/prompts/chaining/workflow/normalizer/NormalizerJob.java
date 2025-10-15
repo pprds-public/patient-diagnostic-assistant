@@ -40,7 +40,9 @@ import static com.pprdsystems.ai.agentic.prompts.chaining.workflow.normalizer.He
  * Output: cleaned, structured messages to Kafka topic: patient_notes.normalized.v1.
  * Every downstream component (orchestrator, models) expects normalized inputs.
  * Deliverables in this module:
- *    Flink job (NormalizerJob.java) -> Kafka source -> simple enrich/clean -> Kafka sink or DLQ.\
+ *    Flink job (NormalizerJob.java) -> Kafka source -> simple enrich/clean -> Kafka sink or DLQ.
+ *
+ * @author Mohammed El Bahja
  */
 public final class NormalizerJob {
   private static final OutputTag<String> DLQ_TAG = new OutputTag<>("dlq", TypeInformation.of(String.class));

@@ -24,6 +24,8 @@ import static com.pprdsystems.ai.agentic.prompts.chaining.workflow.normalizer.Co
  *
  * Usage:
  *   java -jar <name>.jar produce data/sample_notes.jsonl
+ *
+ * @author Mohammed El Bahja
  */
 public class RawNotesProducer {
 

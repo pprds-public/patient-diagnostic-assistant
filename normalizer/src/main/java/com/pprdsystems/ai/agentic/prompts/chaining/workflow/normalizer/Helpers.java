@@ -12,7 +12,7 @@ import java.util.Set;
 import java.util.concurrent.ExecutionException;
 
 /**
- *
+ * @author Mohammed El Bahja
  */
 public final class Helpers {
   private Helpers() { throw new RuntimeException("Helpers is an utility class and cannot be instantiated."); }
