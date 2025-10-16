@@ -1,5 +1,5 @@
 # Patient Diagnostic Assistance - Agentic AI System (WIP)
-A modular and event-driven **Agentic AI system** using The Prompts Chaining Workflow. It extracts clinical insights from unstructured patient notes, generates interpretable diagnostic, and treatment recommendations. It demonstrates how structured orchestration, real-time pipelines, and LLM interactions can collaborate for interpretable healthcare decision-making.  
+A modular and event-driven **Agentic AI system** implementing the **Prompts Chaining Workflow** concept. It extracts clinical insights from unstructured patient notes, generates interpretable diagnostic, and treatment recommendations. It demonstrates how structured orchestration, real-time pipelines, and LLM interactions can collaborate for interpretable healthcare decision-making.  
 
 Each module runs independently and communicates through event-driven orchestration built on top of Apache Flink, Apache Pekko Streams, Kafka, and OpenAI Java SDK.
 
