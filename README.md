@@ -1,5 +1,4 @@
 # Patient Diagnostic Assistance - Agentic AI System (WIP)
-<!-- Core repo meta (works immediately) -->
 [![Build](https://github.com/pprds-public/patient-diagnostic-assistant/actions/workflows/build.yml/badge.svg?branch=develop)](https://github.com/pprds-public/patient-diagnostic-assistant/actions)
 [![Pull Requests](https://img.shields.io/github/issues-pr/pprds-public/patient-diagnostic-assistant)](https://github.com/pprds-public/patient-diagnostic-assistant/pulls)
 [![Last Commit](https://img.shields.io/github/last-commit/pprds-public/patient-diagnostic-assistant/develop)](https://github.com/pprds-public/patient-diagnostic-assistant/commits/develop)
