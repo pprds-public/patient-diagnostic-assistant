@@ -4,7 +4,8 @@
 [![Last Commit](https://img.shields.io/github/last-commit/pprds-public/patient-diagnostic-assistant/develop)](https://github.com/pprds-public/patient-diagnostic-assistant/commits/develop)
 [![Issues](https://img.shields.io/github/issues/pprds-public/patient-diagnostic-assistant)](https://github.com/pprds-public/patient-diagnostic-assistant/issues)
 [![GitHub Release](https://img.shields.io/github/v/release/pprds-public/patient-diagnostic-assistant?display_name=tag&sort=semver)](https://github.com/pprds-public/patient-diagnostic-assistant/releases)
-
+[![Java](https://img.shields.io/badge/Java-17-informational)](#)
+[![Build Tool](https://img.shields.io/badge/Build-Maven-informational)](#)  
 A modular and event-driven **Agentic AI system** implementing the **Prompts Chaining Workflow** concept. It extracts clinical insights from unstructured patient notes, generates interpretable diagnostic, and treatment recommendations. It demonstrates how structured orchestration, real-time pipelines, and LLM interactions can collaborate for interpretable healthcare decision-making.  
 
 Each module runs independently and communicates through event-driven orchestration built on top of Apache Flink, Apache Pekko Streams, Kafka, and OpenAI Java SDK.
