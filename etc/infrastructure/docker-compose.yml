@@ -1,4 +1,5 @@
 version: "3.8"
+
 services:
   zookeeper:
     image: bitnami/zookeeper:3.9
@@ -40,3 +41,39 @@ services:
     depends_on:
       - postgres
     command: ["/bin/sh","-c","/usr/bin/run-server.sh"]
+
+  orchestrator:
+    image: pprd-systems/patient-diagnostic-assistance/orchestrator
+    build: ../../orchestrator
+    container_name: orchestrator
+    environment:
+      "APP_VERSION": ""
+      "APP_JAR_FILE_NAME": ""
+  diagnoser:
+    image: pprd-systems/patient-diagnostic-assistance/diagnoser
+    build: ../../diagnoser
+    container_name: diagnoser
+    environment:
+      "APP_VERSION": ""
+      "APP_JAR_FILE_NAME": ""
+  normalizer:
+    image: pprd-systems/patient-diagnostic-assistance/normalizer
+    build: ../../normalizer
+    container_name: normalizer
+    environment:
+      "APP_VERSION": ""
+      "APP_JAR_FILE_NAME": ""
+  planner:
+    image: pprd-systems/patient-diagnostic-assistance/planner
+    build: ../../planner
+    container_name: planner
+    environment:
+      "APP_VERSION": ""
+      "APP_JAR_FILE_NAME": ""
+  symptoms-extractor:
+    image: pprd-systems/patient-diagnostic-assistance/symptoms-extractor
+    build: ../../symptoms-extractor
+    container_name: symptoms-extractor
+    environment:
+      "APP_VERSION": ""
+      "APP_JAR_FILE_NAME": ""

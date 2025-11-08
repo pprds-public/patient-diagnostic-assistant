@@ -43,6 +43,7 @@
     <java.version>17</java.version>
     <scala.version>2.13</scala.version>
     <flink.version>2.0.0</flink.version>
+    <otel.version>1.52.0</otel.version>
 
     <startCommand-class>com.pprdsystems.ai.agentic.prompts.chaining.workflow.normalizer</startCommand-class>
 
@@ -202,6 +203,16 @@
         <groupId>org.apache.kafka</groupId>
         <artifactId>kafka-clients</artifactId>
         <version>3.7.0</version>
+      </dependency>
+
+
+
+      <dependency>
+        <groupId>io.opentelemetry</groupId>
+        <artifactId>opentelemetry-bom</artifactId>
+        <version>${otel.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
       </dependency>
     </dependencies>
   </dependencyManagement>
