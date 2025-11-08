@@ -76,11 +76,7 @@ public final class NormalizerJob {
         .setProperty(ConsumerConfig.ENABLE_AUTO_COMMIT_CONFIG, "false")
         .build();
 
-    final DataStream<String> raw = env.fromSource(
-      source,
-      WatermarkStrategy.noWatermarks(),
-      "kafka-source-inTopic"
-    );
+    final DataStream<String> raw = env.fromSource(source, WatermarkStrategy.noWatermarks(), "kafka-source-inTopic");
 
     final SingleOutputStreamOperator<String> normalized = raw.process(new NormalizeFn(DLQ_TAG));
     final DataStream<String> dlq = normalized.getSideOutput(DLQ_TAG).map(v -> v);

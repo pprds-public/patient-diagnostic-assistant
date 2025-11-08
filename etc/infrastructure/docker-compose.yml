@@ -1,0 +1,42 @@
+version: "3.8"
+services:
+  zookeeper:
+    image: bitnami/zookeeper:3.9
+    environment:
+      - ALLOW_ANONYMOUS_LOGIN=yes
+    ports:
+      - "2181:2181"
+  kafka:
+    image: bitnami/kafka:3.7
+    ports:
+      - "9092:9092"
+    environment:
+      - KAFKA_ENABLE_KRAFT=no
+      - KAFKA_CFG_ZOOKEEPER_CONNECT=zookeeper:2181
+      - ALLOW_PLAINTEXT_LISTENER=yes
+      - KAFKA_CFG_LISTENERS=PLAINTEXT://:9092
+      - KAFKA_CFG_ADVERTISED_LISTENERS=PLAINTEXT://kafka:9092
+    depends_on:
+      - zookeeper
+
+  postgres:
+    image: postgres:15
+    environment:
+      POSTGRES_USER: pda
+      POSTGRES_PASSWORD: pda
+      POSTGRES_DB: pda
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./db/schema.sql:/docker-entrypoint-initdb.d/01-schema.sql:ro
+
+  superset:
+    image: apache/superset:latest
+    ports:
+      - "8088:8088"
+    environment:
+      - SUPERSET_SECRET_KEY=devkey_please_change
+      - SUPERSET_LOAD_EXAMPLES=no
+    depends_on:
+      - postgres
+    command: ["/bin/sh","-c","/usr/bin/run-server.sh"]

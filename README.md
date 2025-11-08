@@ -6,6 +6,7 @@
 [![GitHub Release](https://img.shields.io/github/v/release/pprds-public/patient-diagnostic-assistant?display_name=tag&sort=semver)](https://github.com/pprds-public/patient-diagnostic-assistant/releases)
 [![Java](https://img.shields.io/badge/Java-17-informational)](#)
 [![Build Tool](https://img.shields.io/badge/Build-Maven-informational)](#)  
+
 A modular and event-driven **Agentic AI system** implementing the **Prompts Chaining Workflow** concept. It extracts clinical insights from unstructured patient notes, generates interpretable diagnostic, and treatment recommendations. It demonstrates how structured orchestration, real-time pipelines, and LLM interactions can collaborate for interpretable healthcare decision-making.  
 
 Each module runs independently and communicates through event-driven orchestration built on top of Apache Flink, Apache Pekko Streams, Kafka, and OpenAI Java SDK.
@@ -16,6 +17,19 @@ Each module simulates a cognitive layer:
 - **Diagnoser (Reasoning):** Infers likely diagnoses.
 - **Planner (Action):** Suggests treatments or next steps.
 - **Orchestrator (Memory & Control):** Coordinates and audits reasoning chain.
+
+> # ⚠️ Disclaimer
+> This repository is part of an ongoing **research and experimental development projects** conducted by **PPRD Systems, LLC** for educational and exploratory purposes only.
+>  
+> 🧪 **Not for Clinical or Production Use**  
+> The system, datasets, and models included here are **prototypes, synthetic and illustrative**. They are not **validated or intended for clinical insights, decision-making, patient diagnosis, or treatment planning**, and should not be deployed in any healthcare or production environment.
+> All datasets, examples, and outputs are synthetic and anonymized. They serve solely as illustrative demonstrations of architecture, data flow, and system design.  
+>  
+> ⚖️ **Liability & Usage**
+Use of this repository or its components outside of controlled research or demonstration contexts is **strictly at the user’s own risk**.
+**PPRD Systems, LLC** provides all materials **“as is,” without any warranties**, express or implied regarding accuracy, completeness, or fitness for purpose.
+> 
+> © **2025 PPRD Systems, LLC**. All rights reserved
 
 ## Notes
 > **Status:** Work in Progress - incremental updates. Some Updates might be published as LinkedIn articles.  
@@ -148,7 +162,12 @@ patient-diagnostic-assistant/
 | Visualization | Build Superset dashboards for full traceability. |
 | Deployment | Docker Compose integration for full pipeline run. |
 
-## 12. References
+## 12. ⚠️ Disclaimer 
+This project is a research prototype by **PPRD Systems, LLC**, provided for educational and experimental purposes only.
+It is not intended for clinical, diagnostic, or production use.  
+All data and outputs are synthetic and illustrative. Use at your own risk.
+
+## 13. References & Acknowledgements
 - [Apache Flink](https://flink.apache.org/)  
 - [Apache Kafka](https://kafka.apache.org/)  
 - [Apache Pekko](https://pekko.apache.org/)  
